@@ -1,6 +1,5 @@
 package racingcar;
 
-import camp.nextstep.edu.missionutils.Randoms;
 import camp.nextstep.edu.missionutils.Console;
 
 import java.util.ArrayList;
@@ -14,8 +13,6 @@ public class Application {
         for (String name : names) {
             cars.add(new Car(name)); // Car 객체 생성 후 arraylist에 담음
         }
-
-
 
         // 2. 횟수만큼 반복
         System.out.println("시도할 회수는 몇회인가요?");
@@ -44,8 +41,6 @@ public class Application {
             }
         } // winners에 갱신 완료
 
-
-        System.out.println("최종 우승자 :" + String.join(", ", winners));
-
+        System.out.println("최종 우승자 : " + String.join(", ", winners));
     }
 }
