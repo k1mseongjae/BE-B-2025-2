@@ -16,9 +16,9 @@ public class Application {
 
         // 2. 횟수만큼 반복
         System.out.println("시도할 회수는 몇회인가요?");
-        int attemps = Integer.parseInt(Console.readLine());
+        int attempts = Integer.parseInt(Console.readLine());
 
-        for (int i = 0; i < attemps; i++){
+        for (int i = 0; i < attempts; i++){
             for(Car car : cars){ // car -> Car 객체
                 car.move();
                 System.out.println(car.getName() + " : " + "-".repeat(car.getPosition()));
